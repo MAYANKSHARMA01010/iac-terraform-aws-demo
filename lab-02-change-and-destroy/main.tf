@@ -42,6 +42,7 @@ resource "aws_s3_bucket" "shopsmart_uploads" {
   tags = {
     Environment = "lab"
     Team        = "platform"
+    ManagedBy   = "terraform"
   }
 }
 
