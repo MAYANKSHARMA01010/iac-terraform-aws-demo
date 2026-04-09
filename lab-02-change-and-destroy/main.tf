@@ -50,3 +50,5 @@ resource "aws_s3_bucket" "shopsmart_uploads" {
 output "bucket_name" {
   value = aws_s3_bucket.shopsmart_uploads.bucket
 }
+
+# if bucket is not empty we can't delete bucket it will give error if want to delete delete all storage of bucket then terraform destroy will work
