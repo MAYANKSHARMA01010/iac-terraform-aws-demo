@@ -46,7 +46,6 @@ provider "aws" {
 #   }
 #
 # We are creating an S3 bucket to store ShopSmart application logs.
-# The bucket name must be globally unique across ALL of AWS.
 # Replace <YOURNAME> with your actual name or handle.
 
 resource "aws_s3_bucket" "shopsmart_logs" {
